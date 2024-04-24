@@ -11,8 +11,8 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": "./src",
-    "types": ["jest", "node"],
+    "types": ["jest", "node", "@testing-library/jest-dom", "@types/jest"],
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src", "src/components/Input/Input.test.tsx"]
 }
