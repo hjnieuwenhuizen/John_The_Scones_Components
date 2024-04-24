@@ -1,10 +1,10 @@
-# John The Scones Components
+# John The Scone's Components
 
-John The Scones Components is a React component library built with Module Federation, allowing you to easily share UI components across multiple applications.
+John The Scone's Components is a React component library built with Module Federation, allowing you to easily share UI components across multiple applications.
 
 ## Description
 
-John The Scones Components is a React component library that provides a collection of reusable UI components. It is built using Module Federation, a feature of webpack, which enables seamless integration of components across multiple applications. With John The Scones Components, you can quickly and efficiently share UI components between different projects, leading to improved development efficiency and code reuse.
+John The Scone's Components is a React component library that provides a collection of reusable UI components. It is built using Module Federation, a feature of webpack, which enables seamless integration of components across multiple applications. With John The Scone's Components, you can quickly and efficiently share UI components between different projects, leading to improved development efficiency and code reuse.
 
 ## Dependencies
 
@@ -16,7 +16,7 @@ John The Scones Components is a React component library that provides a collecti
 
 ## Installation
 
-To install John The Scones Components and its dependencies, run:
+To install John The Scone's Components and its dependencies, run:
 
 ```bash
 npm install
@@ -24,7 +24,7 @@ npm install
 
 ## Test
 
-Tests for John The Scones Components are written using Jest, a delightful JavaScript testing framework. To run tests, use:
+Tests for John The Scone's Components are written using Jest, a delightful JavaScript testing framework. To run tests, use:
 
 ```bash
 npm run test
@@ -44,7 +44,7 @@ By following the AAA pattern, tests become more understandable, maintainable, an
 
 ## Start
 
-To start dev server for John The Scones Components, run:
+To start dev server for John The Scone's Components, run:
 
 ```bash
 npm run start
@@ -52,7 +52,7 @@ npm run start
 
 ## Build
 
-To build John The Scones Components, run:
+To build John The Scone's Components, run:
 
 ```bash
 npm run build
