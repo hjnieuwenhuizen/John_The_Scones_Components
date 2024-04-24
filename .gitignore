@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+
+# Firebase
+firebase.json
+.firebaserc
+firebase-debug.log
+
+# Build files
+dist/
+build/
+out/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+/jspm_packages/
+/bower_components/
+/.bundle/
+/vendor/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+web/
+Generated files
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.pnp.js
+
+# ESLint
+.eslintcache
+.eslintcache/
+*.eslintcache
+
+# Lock files
+package-lock.json
+yarn.lock
