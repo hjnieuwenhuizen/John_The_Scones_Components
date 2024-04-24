@@ -7,7 +7,7 @@
     "test": "NODE_ENV=test jest --watch",
     "start": "webpack serve --config scripts/webpack.config.js --mode development --open",
     "build": "webpack --config scripts/webpack.config.js --mode production"
-  },  
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -27,7 +27,11 @@
       "react-app/jest"
     ]
   },
-  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
