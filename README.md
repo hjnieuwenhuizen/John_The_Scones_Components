@@ -53,7 +53,7 @@ npm run start
 
 You can also use Storybook:
 
-````bash
+```bash
 npm run storybook
 ```
 
@@ -63,4 +63,4 @@ To build John The Scone's Components, run:
 
 ```bash
 npm run build
-````
+```
