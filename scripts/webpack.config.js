@@ -2,12 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
+const deps = require("../package.json").dependencies;
 
 module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production';
 
     return {
-        entry: './src/index.tsx',
+        entry: './src/index.ts',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: isProduction ? '[name].[contenthash].js' : '[name].bundle.js',
@@ -73,12 +74,12 @@ module.exports = (env, argv) => {
                     react: {
                         eager: true,
                         singleton: true,
-                        requiredVersion: '^18.2.0' // Specify the version of 'react' here
+                        requiredVersion: deps["react"]
                     },
                     'react-dom': {
                         eager: true,
                         singleton: true,
-                        requiredVersion: '^18.2.0' // Specify the version of 'react-dom' here
+                        requiredVersion: deps["react-dom"]
                     }
                 }
             })

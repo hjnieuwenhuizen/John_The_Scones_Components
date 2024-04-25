@@ -1,4 +1,4 @@
-# John The Scone's Components
+# John The Scone's Components (Work in Progress)
 
 John The Scone's Components is a React component library built with Module Federation, allowing you to easily share UI components across multiple applications.
 
