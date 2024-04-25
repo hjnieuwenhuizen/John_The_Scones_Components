@@ -13,6 +13,7 @@ John The Scone's Components is a React component library that provides a collect
 -   Material Icons
 -   Formik
 -   Jest
+-   Storybook
 
 ## Installation
 
@@ -50,10 +51,16 @@ To start dev server for John The Scone's Components, run:
 npm run start
 ```
 
+You can also use Storybook:
+
+````bash
+npm run storybook
+```
+
 ## Build
 
 To build John The Scone's Components, run:
 
 ```bash
 npm run build
-```
+````
