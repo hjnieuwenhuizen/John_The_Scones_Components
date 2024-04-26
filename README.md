@@ -1,5 +1,7 @@
 # John The Scone's Components (Work in Progress)
 
+<span style="color:red;">Not working just yet. Still busy with getting configs right. Container app having issues resolving Input</span>
+
 John The Scone's Components is a React component library built with Module Federation, allowing you to easily share UI components across multiple applications.
 
 ## Description
