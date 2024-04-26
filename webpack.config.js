@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
-const deps = require("../package.json").dependencies;
+const deps = require("./package.json").dependencies;
 
 module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production';
@@ -35,27 +35,7 @@ module.exports = (env, argv) => {
             extensions: ['.ts', '.tsx', '.js', '.jsx']
         },
         optimization: {
-            splitChunks: {
-                chunks: 'all',
-                minSize: 20000,
-                maxSize: 244000,
-                minChunks: 1,
-                maxAsyncRequests: 30,
-                maxInitialRequests: 30,
-                automaticNameDelimiter: '~',
-                enforceSizeThreshold: 50000,
-                cacheGroups: {
-                    defaultVendors: {
-                        test: /[\\/]node_modules[\\/]/,
-                        priority: -10
-                    },
-                    default: {
-                        minChunks: 2,
-                        priority: -20,
-                        reuseExistingChunk: true
-                    }
-                }
-            }
+            splitChunks: false
         },
         plugins: [
             new CleanWebpackPlugin(),
@@ -67,7 +47,7 @@ module.exports = (env, argv) => {
                 library: { type: 'var', name: 'john_the_scones_components' },
                 filename: 'remoteEntry.js',
                 exposes: {
-                    './Input': './src/components/Input'
+                    './Input': './src/components/Input/index.ts'
                     // Add more components to expose as needed
                 },
                 shared: {

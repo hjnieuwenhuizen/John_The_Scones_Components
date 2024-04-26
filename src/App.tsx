@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Input from './components/Input'
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ const App: React.FC = () => {
   return (
     <Container>
       <Title>Hello, World!</Title>
+      <Input label='test' value='' onChange={() => {}}/>
     </Container>
   );
 };
